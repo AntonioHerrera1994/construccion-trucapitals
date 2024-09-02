@@ -19,10 +19,7 @@
             background-position: center;
         }
 
-        .container {
-
-        }
-
+      
         h1 {
             color: #2a2d9a;
         }
@@ -31,12 +28,26 @@
             color: #2a2d9a;
             margin-top: 20px;
         }
+
+        @media screen and (min-width:320px) and (max-width:800px) {
+
+            .logo{
+                width: 70%;
+                height: 70%;
+            }
+
+            h1{
+                font-size: 1rem;
+            }
+
+          
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="./Assets/logo-new.webp" width="25%" height="25%"/> <br>
-        <img src="./Assets/icono.webp" width="35%" height="35%"/> 
+        <img src="./Assets/logo-new.webp" width="25%" height="25%" class="logo"/> <br>
+        <img src="./Assets/icono.webp" width="35%" height="35%" class="arte"/> 
         <h1>Nuestro sitio web está en construcción.</h1>
         <p> ¡Vuelve pronto para ver las novedades!</p>
     </div>
