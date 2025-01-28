@@ -43,7 +43,7 @@
 
         p {
             color: #2a2d9a;
-            margin-top: 15px;
+            margin-top: 1.5rem;
             font-size: 1.1rem;
             padding-bottom: 2rem;
         }
@@ -100,10 +100,23 @@
             color: #2a2e9a5f;
         }
 
-        iframe{
-            padding-top: 1rem;
-            padding-bottom: 2rem;
-        }
+        .video-responsive {
+  position: relative;
+  padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+  padding-top: 30px; /* Espacio para la barra de título del reproductor */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
         @media screen and (min-width:320px) and (max-width:800px) {
 
             .logo{
@@ -152,10 +165,6 @@
 
         }
 
-           iframe{
-            width: 200;
-            height: 350;
-        }
           
         }
     </style>
@@ -165,10 +174,11 @@
         <img src="./Assets/logo-new.webp" width="20%" height="20%" class="logo"/> <br>
         <h1>Nuestro sitio web está en construcción.</h1>
     
-
+        
+        <div class="video-responsive">
         <iframe 
-        width="700" 
-        height="415" 
+        width="560" 
+        height="315" 
         src="https://www.youtube.com/embed/mLa6ESDR9_4?si=ZVBD3C2vULpwLhZ3" 
         title="YouTube video player" 
         frameborder="0" 
@@ -176,6 +186,7 @@
         referrerpolicy="strict-origin-when-cross-origin" 
         allowfullscreen>
         </iframe>
+    </div>
         <!-- <img src="./Assets/icono.webp" width="35%" height="35%" class="arte"/> -->
         <p> Si eres usuario de TruCapitals, te comunicamos que nuestra TruApp está en construcción <br>para brindarte una experiencia mejorada, con más información y mejor servicio.</p>
     </div>
